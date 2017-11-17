@@ -1,14 +1,13 @@
 # Grade-Sender
-成绩邮件推送脚本
+Python3 script for grade sending
 
 # Usage
+Please use the jupyter notebook interface. **Do CHANGE the Configuration**
 
-```
-python3 mail.py
-```
+'**DEBUG**' should be changed to '**False**' in order to send emails to students. Otherwise all emails go to the '**user_account**'
 
-数据来自grade.dat文件，请参照示例。
+Or try to utilize the functions written in gradeSender.py. Detailed description will be updated later.
 
-发件邮箱信息请在mail.py中设置。DEBUG为True默认为发送到发件人邮箱以供测试。使用时请记得改为False。
+Currently, it supports formatted .csv file, with `example.csv` given for reference.
 
-因为系统有每分钟限发5封邮件的限制，所以每5封邮件自动等待一分钟。
+The system that I used has limitation on the sending frequency. The standby time may vary with your own system.
